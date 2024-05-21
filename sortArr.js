@@ -19,7 +19,7 @@
                 }
             }
         }
-
+        if(isIncrease)console.log("Сортування за зростанням");else console.log("Сортування за спаданням");
         console.log(`Метод вибору(бульбашковий): порівняння - ${compar}, обмін - ${swaps}\n---------------------`);
         sort.addUnd(arr,isIncrease);
         return arr;
@@ -49,6 +49,7 @@
             }
         }
 
+        if(isIncrease)console.log("Сортування за зростанням");else console.log("Сортування за спаданням");
         console.log(`Метод мінімального елемента(вибірковий): порівняння - ${compar}, обмін - ${swaps}\n---------------------`);
         sort.addUnd(arr,isIncrease);
         return arr;
@@ -73,7 +74,8 @@
       
             arr[j + 1] = current;
           }
-
+        
+        if(isIncrease)console.log("Сортування за зростанням");else console.log("Сортування за спаданням");
         console.log(`Метод вставки: порівняння - ${compar}, переміщення - ${moves}\n---------------------`);
         sort.addUnd(arr,isIncrease);
         return arr;
@@ -105,7 +107,7 @@
             gap = Math.floor(gap / 2);
         }
 
-
+        if(isIncrease)console.log("Сортування за зростанням");else console.log("Сортування за спаданням");
         console.log(`Метод Шелла: порівняння - ${compar}, обмін - ${swaps}\n---------------------`);
         sort.addUnd(arr,isIncrease);
         return arr;
@@ -152,7 +154,7 @@
 
         sorting(arr, 0, arr.length - 1);
 
-
+        if(isIncrease)console.log("Сортування за зростанням");else console.log("Сортування за спаданням");
         console.log(`Метод Хоара(швидке сортування): порівняння - ${compar}, обмін - ${swaps}\n---------------------`);
         sort.addUnd(arr,isIncrease);
         return arr;
